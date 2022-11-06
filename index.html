@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Einladung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(255, 248, 109)">
+    <div class="kopfzeile">Einladung</div>
+    
+
+
+
+
+
+
+    <div class="inhalt" id="inhalt" style="display:none">
+        <h1 class="h1">Hallo! Bitte  gib den VOR-Namen unserer gemeinsamen (Klassen-) Lehrerin ein.</h1>
+        <input type="text" size="10" id="lehrer" onkeyup="check_mindestlaenge();" focus>
+        <input type="button" value="weiter" id="lehrerbutton" disabled onclick="check_lehrerin();">
+        <div class="falsch" id="falsch" style="display:none">FALSCH</div>
+        
+
+    </div>
+
+
+
+
+
+
+    <div class="einladung" id="einladung" style="display:none">
+        <p><h1 class="h1">Hallo <span id="name"></span>!</h1></p>
+        <h1 class="h1">Ich würde dich gerne zu meinem 12.Geburtstag einladen.</h1>
+        <p><h2 class="h2">Datum: 19.11.22</h2></p>
+        <p><h2 class="h2">Uhzeit: 14:50 Uhr</h2></p>
+        <p><h2 class="h2">Ort: Shangrila Schwelm</h2></p>
+        <p><table class="antwort">
+            <tr class="antwort">
+                <td></td>
+                <td class="ja" onclick="send_answer(1);">ich komme</td>
+                <td width="20"></td>
+                <td class="nein" onclick="send_answer(0);">ich komme nicht</td>
+                <td></td>
+             </tr>
+        </table> </p>
+     
+
+    </div>
+
+
+
+
+
+
+    <div id="details" class="details" style="display:none">
+       <p>Schön, dass du zu meinem Geburtstag kommen möchtest.</p>
+        <p>Hier sind die wichtigen Infos:</p>
+        <ul>
+            <li>Wo?: Shangrila Freizeitarena</li>
+            <li>Adresse: Schwelm, Ruhrstr. 77</li>
+            <li>Was wir dort machen?: Lasertag, Bubblesoccer, Trampolin, Bowling</li>
+            <li>Wann?: 19.11.22 14:50 Uhr</li>
+        </ul>
+        <p>Weitere Infos: Komme bitte in bequemer und sportlicher Kleidung (man kann sich dort nicht umziehen).</p>
+        <p>Bring bitte normale Hallensportschuhe mit.</p>
+        <p>Bitte drucke- und fülle die<br><a href="Einverständniserklärung.pdf">Einverständniserklärung</a><br> aus und bringe sie mir VORHER mit.</p>
+        <p>Falls es vorher noch etwas zu organisieren gibt, würde ich Dich gern anrufen können. Gibst Du mirr deine Telefonnummer?</p>
+        <p id="eingabenr"><input type="number" size="10" id="phone" onkeyup="check_phone();" autofocus>
+            <input type="button" value="senden" id="phonespeichern" disabled onclick="update_phone();" placeholder"Telefonnummer">
+        </p>
+        <p id="gespeichert" style="display:none">Vielen Dank für Deine Rufnummer.</p>
+    </div>
+
+
+
+
+
+    <div id="schade" class="schade" style="display:none">
+        <h1>Ok, schade!</h1>
+    </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

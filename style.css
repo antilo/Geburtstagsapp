@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+}
+
+.h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4.5vh;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #000000;
+    color: rgb(255, 255, 255);
+}
+input{
+    font-size: 2em;
+}
+
+.kopfzeile {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #000000;
+    color: rgb(255, 255, 255);
+}
+
+.inhalt {
+    height: 95vh;
+    text-align: center;
+}
+
+.einladung {
+    height: 95vh;
+    text-align: center;
+}
+
+.falsch{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: 100;
+    font-size: 5vh;
+    
+
+}
+
+.h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #000000;
+    color: rgb(255, 255, 255);
+}
+
+.h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #000000;
+    color: rgb(255, 255, 255);
+}
+
+.antwort{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 50;
+    text-shadow: 2px 2px 2px #000000;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.details {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2vh;
+        font-weight: 100;
+        text-shadow: 2px 2px 2px #000000;
+        color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+a:hover {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+tr.antwort {
+    height: 50px;
+}
+
+td.ja {
+    color: white;
+    background-color: green;
+    width: 40%;
+    border-radius: 10px;
+}
+
+td.nein {
+    color: white;
+    background-color: red;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.schade{
+    height: 97vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4.5vh;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #000000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
